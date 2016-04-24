@@ -234,6 +234,7 @@ function create_config( )
    "get",
    "gif",
    "github",
+   "gituser",
    "google",
    "gps",
    "joke",
@@ -272,6 +273,7 @@ function create_config( )
    "weather",
    "wiki",
    "webshot",
+   "write",
    "music",
     },
     sudo_users = {179071599},--Sudo users
