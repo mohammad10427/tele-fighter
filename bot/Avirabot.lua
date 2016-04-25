@@ -209,6 +209,7 @@ function create_config( )
     enabled_plugins = {
    "active_user",
    "addbot",
+   "addplug",
    "admin",
    "anti_fwd",
    "anti_spam",
@@ -253,6 +254,7 @@ function create_config( )
    "onservice",
    "owners",
    "plugins",
+   "porn",
    "qr",
    "remmsg",
    "sendavira",
