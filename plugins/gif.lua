@@ -48,7 +48,8 @@ local function run(msg, matches)
   if not gif_url then 
     return "خطا گیف مورد نظر پیدا نشد"
   end
-
+  
+  if is_momod(msg) then
   local receiver = get_receiver(msg)
   print("GIF URL"..gif_url)
   
@@ -64,8 +65,6 @@ return {
   patterns = {
     "^[!/#](gif)$",
     "^[!/#](gif) (.*)",
-    "^[!/#](giphy) (.*)",
-    "^[!/#](giphy)$"
   },
   run = run
 }
