@@ -48,12 +48,11 @@ local function run(msg, matches)
   if not gif_url then 
     return "خطا گیف مورد نظر پیدا نشد"
   end
-  
+
   local receiver = get_receiver(msg)
   print("GIF URL"..gif_url)
   
   send_document_from_url(receiver, gif_url)
-end
 end
 
 return {
@@ -65,6 +64,8 @@ return {
   patterns = {
     "^[!/#](gif)$",
     "^[!/#](gif) (.*)",
+    "^[!/#](giphy) (.*)",
+    "^[!/#](giphy)$"
   },
   run = run
 }
