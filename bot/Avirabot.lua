@@ -231,6 +231,7 @@ function create_config( )
    "feedback",
    "filtering",
    "filemanager",
+   "fal",
    "get",
    "gif",
    "github",
