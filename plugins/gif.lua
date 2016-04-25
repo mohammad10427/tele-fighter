@@ -54,6 +54,7 @@ local function run(msg, matches)
   
   send_document_from_url(receiver, gif_url)
 end
+end
 
 return {
   description = "GIFs from telegram with Giphy API",
