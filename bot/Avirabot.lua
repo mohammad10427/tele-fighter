@@ -257,6 +257,7 @@ function create_config( )
    "remmsg",
    "sendavira",
    "sendplug",
+   "sendbot",
    "set",
    "setabout",
    "social",
