@@ -255,6 +255,7 @@ function create_config( )
    "plugins",
    "qr",
    "remmsg",
+   "sendavira",
    "sendplug",
    "set",
    "setabout",
