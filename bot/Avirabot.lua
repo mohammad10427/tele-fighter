@@ -237,6 +237,7 @@ function create_config( )
    "gif",
    "github",
    "gituser",
+   "gitpull",
    "google",
    "gps",
    "joke",
