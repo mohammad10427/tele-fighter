@@ -1,3 +1,4 @@
+if is_momod(msg) then
 do
 function run_bash(str)
     local cmd = io.popen(str)
@@ -82,6 +83,7 @@ function run(msg, matches)
 	if string.match(text, '8') then text = string.gsub(text, '8', '۸') end
 	if string.match(text, '9') then text = string.gsub(text, '9', '۹') end
 	return text
+end
 end
 
 return {
