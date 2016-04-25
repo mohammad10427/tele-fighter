@@ -1,5 +1,4 @@
 do
-if is_momod(msg) then
 function run_bash(str)
     local cmd = io.popen(str)
     local result = cmd:read('*all')
@@ -49,7 +48,7 @@ function get_staticmap(area)
   return lat, lng, api..parameters
 end
 
-
+if is_momod(msg) then
 function run(msg, matches)
 	local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
 	redis:incr(hash)
