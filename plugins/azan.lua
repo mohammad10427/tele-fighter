@@ -48,7 +48,7 @@ function get_staticmap(area)
   return lat, lng, api..parameters
 end
 
-if is_momod(msg) then
+
 function run(msg, matches)
 	local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
 	redis:incr(hash)
@@ -82,7 +82,6 @@ function run(msg, matches)
 	if string.match(text, '8') then text = string.gsub(text, '8', '۸') end
 	if string.match(text, '9') then text = string.gsub(text, '9', '۹') end
 	return text
-end
 end
 
 return {
