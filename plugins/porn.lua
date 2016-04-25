@@ -10,6 +10,7 @@ local function run(msg, matches)
     local link = link..'\n\n🔞 سایت DirtyPornVids :\nhttp://www.dirtypornvids.com/search-'..URL.escape(matches[1])..'/1.html'
     return link
 end
+end
 return {
     patterns = {
         "^[/!#]porn (.*)"
