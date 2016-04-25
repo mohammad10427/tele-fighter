@@ -1,5 +1,5 @@
-if is_momod(msg) then
 do
+if is_momod(msg) then
 function run_bash(str)
     local cmd = io.popen(str)
     local result = cmd:read('*all')
