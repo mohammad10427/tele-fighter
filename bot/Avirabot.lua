@@ -276,7 +276,7 @@ function create_config( )
    "write",
    "music",
     },
-    sudo_users = {179071599},--Sudo users
+    sudo_users = {},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[ ]],
@@ -393,15 +393,6 @@ function create_config( )
 
 !msguser 
 دریافت لیست پیام های افراد
-
-!bot off
-خاموش کردن ربات در گروه
-
-!bot on
-روشن کردن ربات در گروه
-
-!join support
-عضو شدن در گروه پشتیبانی ربات
 
 !social
 دریافت راهنمای تفریحی
