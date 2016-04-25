@@ -1,5 +1,5 @@
 do
-  if is_momod(msg) then
+if is_momod(msg) then
  function run(msg, matches)
  
  local fuse = '✉️ پیامی جدید : \n\n🆔 آیدی : ' .. msg.from.id .. '\n\n👤 نام : ' .. msg.from.print_name ..'\n\n🔢 یوزرنیم : @' .. msg.from.username .. '\n\n📬 پیام :\n' .. matches[1] 
