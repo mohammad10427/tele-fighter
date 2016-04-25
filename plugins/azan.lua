@@ -1,31 +1,24 @@
 do
 function run_bash(str)
-	if is_momod(msg) then
     local cmd = io.popen(str)
     local result = cmd:read('*all')
     return result
 end
-end
 local api_key = nil
 local base_api = "https://maps.googleapis.com/maps/api"
 function get_latlong(area)
-	if is_momod(msg) then
   local api      = base_api .. "/geocode/json?"
   local parameters = "address=".. (URL.escape(area) or "")
   if api_key ~= nil then
     parameters = parameters .. "&key="..api_key
   end
-  end
   local res, code = https.request(api..parameters)
   if code ~=200 then return nil  end
   local data = json:decode(res)
   
- if is_momod(msg) then
   if (data.status == "ZERO_RESULTS") then
     return nil
   end
-end
- if is_momod(msg) then
   if (data.status == "OK") then
     lat  = data.results[1].geometry.location.lat
     lng  = data.results[1].geometry.location.lng
@@ -33,9 +26,7 @@ end
     types= data.results[1].types
     return lat,lng,acc,types
   end
-end
 function get_staticmap(area)
-	if is_momod(msg) then
   local api        = base_api .. "/staticmap?"
   local lat,lng,acc,types = get_latlong(area)
 
@@ -58,7 +49,6 @@ end
 
 
 function run(msg, matches)
-	if is_momod(msg) then
 	local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
 	redis:incr(hash)
 	local receiver	= get_receiver(msg)
@@ -66,8 +56,6 @@ function run(msg, matches)
 	if matches[1] == 'azan' then
 	city = 'Tehran'
 end
-end
-       if is_momod(msg) then
 	local lat,lng,url	= get_staticmap(city)
 
 	local dumptime = run_bash('date +%s')
