@@ -54,9 +54,11 @@ function run(msg, matches)
 	redis:incr(hash)
 	local receiver	= get_receiver(msg)
 	local city = matches[1]
+	if is_momod(msg) then
 	if matches[1] == 'azan' then
 	city = 'Tehran'
-	end
+       end
+     end
 	local lat,lng,url	= get_staticmap(city)
 
 	local dumptime = run_bash('date +%s')
