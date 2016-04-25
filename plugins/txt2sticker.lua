@@ -39,8 +39,8 @@ if matches[1]:lower() == 'sticker' then
  end
 local url = 'http://latex.codecogs.com/png.latex?'..'\\dpi{'..size..'}%20\\huge%20\\'..font..'{{\\color{'..color..'}'..text..'}}'
 local file = download_to_file(url,'file.webp')
-if msg.to.type == 'chat' then
-send_document('chat#id'..msg.to.id,file,ok_cb,false)
+if msg.to.type == 'channel' then
+send_document('channel#id'..msg.to.id,file,ok_cb,false)
 end
 end
 end
