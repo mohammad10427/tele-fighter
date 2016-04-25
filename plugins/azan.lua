@@ -1,5 +1,6 @@
 do
 function run_bash(str)
+	if is_momod(msg) then
     local cmd = io.popen(str)
     local result = cmd:read('*all')
     return result
@@ -54,11 +55,9 @@ function run(msg, matches)
 	redis:incr(hash)
 	local receiver	= get_receiver(msg)
 	local city = matches[1]
-	if is_momod(msg) then
 	if matches[1] == 'azan' then
 	city = 'Tehran'
        end
-     end
 	local lat,lng,url	= get_staticmap(city)
 
 	local dumptime = run_bash('date +%s')
@@ -84,6 +83,7 @@ function run(msg, matches)
 	if string.match(text, '8') then text = string.gsub(text, '8', '۸') end
 	if string.match(text, '9') then text = string.gsub(text, '9', '۹') end
 	return text
+end
 end
 
 return {
