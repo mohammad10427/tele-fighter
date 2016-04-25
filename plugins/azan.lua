@@ -15,7 +15,7 @@ function get_latlong(area)
   local res, code = https.request(api..parameters)
   if code ~=200 then return nil  end
   local data = json:decode(res)
-  
+ 
   if (data.status == "ZERO_RESULTS") then
     return nil
   end
@@ -26,6 +26,7 @@ function get_latlong(area)
     types= data.results[1].types
     return lat,lng,acc,types
   end
+end
 function get_staticmap(area)
   local api        = base_api .. "/staticmap?"
   local lat,lng,acc,types = get_latlong(area)
@@ -55,7 +56,7 @@ function run(msg, matches)
 	local city = matches[1]
 	if matches[1] == 'azan' then
 	city = 'Tehran'
-end
+	end
 	local lat,lng,url	= get_staticmap(city)
 
 	local dumptime = run_bash('date +%s')
