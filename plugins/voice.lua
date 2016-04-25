@@ -3,7 +3,7 @@ local function run(msg, matches)
 
   local url = "http://www.farsireader.com/PlayText.aspx?Text="..URL.escape(eq).."&Punc=false"
   local receiver = get_receiver(msg)
-  local file = download_to_file(url,'text.ogg')
+  local file = download_to_file(url,'AviraVoice.ogg')
   send_audio('channel#id'..msg.to.id, file, ok_cb , false)
 end
 
