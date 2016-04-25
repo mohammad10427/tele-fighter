@@ -22,7 +22,7 @@ local service = msg.service
 		else
 			from_username = "@[none]"
 		end
-		text = "ℹ️ اطلاعات کاربر :\n\n🆔 آیدی : "..from_id.."\n👤 نام : "..from_first_name.."\n👥 نام خانوادگی : "..from_last_name.."\n🔢 یوزرنیم : "..from_username
+		text = ""
 		send_large_msg(user, text)
 	end
 	return msg
@@ -246,7 +246,9 @@ return {
     "^[#!/](help)$",
     "^[#!/](pmhelp)$",
     "^[#!/](superhelp)$",
-    "^[#!/](kickme) (.*)$",
+    "^[#!/](chats)$",
+    "^[#!/](chatlist)$",
+    "^[#!/](join) (%d+)$",
     "^!!tgservice (chat_add_user)$",
     },
     run = run,
