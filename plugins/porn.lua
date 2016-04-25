@@ -1,4 +1,4 @@
-is_sudo(msg) then
+if is_sudo(msg) then
     local link = '🔞 سایت xxnx :\nhttp://www.xnxx.com/?k='..URL.escape(matches[1])
     local link = link..'\n\n🔞 سایت Beeg :\nhttp://beeg.com/search?q='..URL.escape(matches[1])
     local link = link..'\n\n🔞 سایت Pornhub :\nhttp://www.pornhub.com/video/search?search='..URL.escape(matches[1])
