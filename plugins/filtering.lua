@@ -67,7 +67,7 @@ function clear_commandsbad(msg, cmd_name)
   --Save on redis  
   local hash = get_variables_hash(msg)
   redis:hdel(hash, cmd_name)
-  return ''..cmd_name..'  پاک شد'
+  return ''..cmd_name..'  از لیست فیلترینگ حذف شد'
 end
 
 local function run(msg, matches)
