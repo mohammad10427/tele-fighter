@@ -263,6 +263,7 @@ end
 		reload_plugins(true)
 		post_msg(receiver, "Reloaded!", ok_cb, false)
 		return "🔃 تمامی پلایگن های ربات دوباره اجرا شدند 🔃"
+		send_document(get_receiver(msg), "/root/Avira/logo/reload.webp", ok_cb, false)
 	end
 	--[[*For Debug*
 	if matches[1] == "vardumpmsg" and is_admin1(msg) then
