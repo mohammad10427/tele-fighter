@@ -65,18 +65,25 @@ local function run(msg, matches)
 			local F2,C2 = temps(jtab.list[i].main.temp_max)
 			if jtab.list[i].weather[1].main == "Thunderstorm" then
 				status = "🌪طوفاني"
+				    send_document(get_receiver(msg), "/root/Avira/logo/storm.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Drizzle" then
 				status = "🌦نمنم باران"
+				    send_document(get_receiver(msg), "/root/Avira/logo/rain.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Rain" then
 				status = "🌨باراني"
+				    send_document(get_receiver(msg), "/root/Avira/logo/rain.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Snow" then
 				status = "❄️برفي"
+				    send_document(get_receiver(msg), "/root/Avira/logo/snow.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Atmosphere" then
 				status = "🌫مه - غباز آلود"
+				    send_document(get_receiver(msg), "/root/Avira/logo/cloud.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Clear" then
 				status = "☀️صاف"
+				    send_document(get_receiver(msg), "/root/Avira/logo/sun.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Clouds" then
 				status = "☁️☁️ابري"
+				    send_document(get_receiver(msg), "/root/Avira/logo/cloud.webp", ok_cb, false)
 			elseif jtab.list[i].weather[1].main == "Extreme" then
 				status = "-------"
 			elseif jtab.list[i].weather[1].main == "Additional" then
