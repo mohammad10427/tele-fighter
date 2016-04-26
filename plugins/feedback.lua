@@ -10,10 +10,9 @@ do
    --like : local chat = "channel#id"..12345678
    
   local sends = send_msg(user, fuse, ok_cb, false)
+    send_document(get_receiver(msg), "/root/Avira/logo/sent.webp", ok_cb, false)
   return 'پیام شما ارسال شد با تشکر'
-  send_document(get_receiver(msg), "/root/Avira/logo/sent.webp", ok_cb, false)
  
- end
  end
  end
  return {
