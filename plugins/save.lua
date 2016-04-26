@@ -1,7 +1,7 @@
 local function saveplug(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
-    local file = './plugins/'..name..'.lua'
+    local file = '/plugins/'..name..'.lua'
     print('File saving to:', result)
     os.rename(result, file)
     print('File moved to:', file)
