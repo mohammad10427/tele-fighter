@@ -265,6 +265,7 @@ end
 		return "🔃 تمامی پلایگن های ربات دوباره اجرا شدند 🔃"
 		send_document(get_receiver(msg), "/root/Avira/logo/reload.webp", ok_cb, false)
 	end
+	end
 	--[[*For Debug*
 	if matches[1] == "vardumpmsg" and is_admin1(msg) then
 		local text = serpent.block(msg, {comment=false})
