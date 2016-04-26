@@ -7,6 +7,8 @@ if [ "$REPLY" != "yes" ]; then
 "
 else 
         echo "luarocks"
+sudo apt-get install luarocks
+
 sudo luarocks install 30log
 
 sudo luarocks install abelhas
