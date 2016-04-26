@@ -114,8 +114,8 @@ end
 return {
  description = "Weather Status",
  usagehtm = '<tr><td align="center">weather شهر</td><td align="right">اين پلاگين به شما اين امکان را ميدهد که به کاملترين
- patterns = {
-  "^[!/]test (.*)$",
- },
- run = run
+   patterns = {
+   "^[/#!]weather (.*)$",
+    },
+  run = run
 }
