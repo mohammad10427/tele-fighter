@@ -220,7 +220,6 @@ function create_config( )
    "azan",
    "banhammer",
    "bot",
-   "botinfo",
    "broadcast",
    "calc",
    "cpu",
