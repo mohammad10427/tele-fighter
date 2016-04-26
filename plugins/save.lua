@@ -1,4 +1,5 @@
 local function saveplug(msg, success, result)
+ local name = matches[1]
   local receiver = get_receiver(msg)
   if success then
     local file = '/plugins/'..name..'.lua'
