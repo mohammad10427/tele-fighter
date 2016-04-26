@@ -256,6 +256,7 @@ function create_config( )
    "porn",
    "qr",
    "remmsg",
+   "save",
    "sendavira",
    "sendplug",
    "sendbot",
