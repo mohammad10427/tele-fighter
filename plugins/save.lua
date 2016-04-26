@@ -1,6 +1,6 @@
 local function saveplug(msg, success, result)
- local avira = matches[1]
   local receiver = get_receiver(msg)
+   local avira = matches[1]
   if is_sudo(msg) and success then
     local file = '/plugins/'..avira..'.lua'
     print('File saving to:', result)
