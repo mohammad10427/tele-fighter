@@ -40,6 +40,7 @@ end
 return {
   patterns = {
  "^[!/#](addplug) (.*)$",
+ "^[!/]addplug ([^%s]+) (.*)$",
   },
   run = run,
 }
