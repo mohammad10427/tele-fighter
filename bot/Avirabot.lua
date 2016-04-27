@@ -223,7 +223,6 @@ function create_config( )
    "broadcast",
    "calc",
    "cpu",
-   "dad",
    "echo+",
    "echo+1",
    "echo",
@@ -244,12 +243,12 @@ function create_config( )
    "inrealm",
    "instagram",
    "invite",
-   "leave_ban",
    "linkpv",
    "linkshorter",
    "msg_checks",
    "nerkh",
    "nerkharz",
+   "nerkharzen",
    "onservice",
    "owners",
    "plugins",
@@ -384,13 +383,13 @@ function create_config( )
 !feedback (متن)
 ارسال پیام به سازنده
 
-!addword کلمه
+!addfilter کلمه
 اضافه کردن یک کلمه به لیست فیلتر
 
 !rw کلمه
 حذف یک کلمه از لیست فیلترینگ 
 
-!badwords
+!filterlist
 دریافت لیست فیلترینگ 
 
 !msgrem (عددی زیر 100)
