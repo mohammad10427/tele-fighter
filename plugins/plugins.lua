@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 do
 
 -- Returns the key (index) in the config.enabled_plugins table
@@ -90,6 +100,17 @@ local function enable_plugin( plugin_name )
     table.insert(_config.enabled_plugins, plugin_name)
     print(plugin_name..' added to _config table')
     save_config()
+    
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
     -- Reload the plugins
     return reload_plugins( )
   else
@@ -152,7 +173,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins 
-  if matches[1] == '!plugins' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == 'plugins' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -208,18 +229,25 @@ return {
           "!plugins reload : reloads all plugins." },
           },
   patterns = {
-    "^!plugins$",
-    "^!plugins? (enable) ([%w_%.%-]+)$",
-    "^!plugins? (disable) ([%w_%.%-]+)$",
-    "^!plugins? (enable) ([%w_%.%-]+) (chat)",
-    "^!plugins? (disable) ([%w_%.%-]+) (chat)",
-    "^!plugins? (reload)$" },
+    "^[!/#]plugins$",
+    "^[!/#]plugins? (enable) ([%w_%.%-]+)$",
+    "^[!/#]plugins? (disable) ([%w_%.%-]+)$",
+    "^[!/#]plugins? (enable) ([%w_%.%-]+) (chat)",
+    "^[!/#]plugins? (disable) ([%w_%.%-]+) (chat)",
+    "^[!/#]plugins? (reload)$" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
 }
 
 end
--- مدیر : @mohammadarak
--- ربات : @avirabot
--- هر گونه کپی برداری بدون ذکر منبع حرام است 
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
