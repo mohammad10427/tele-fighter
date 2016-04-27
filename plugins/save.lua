@@ -15,7 +15,7 @@ end
 local function run(msg,matches)
     local receiver = get_receiver(msg)
     local group = msg.to.id
-    if msg.reply_id then
+    if is_sudo(msg) and msg.reply_id then
    local name = matches[2]
       if matches[1] == "save" and matches[2] then
 load_document(msg.reply_id, saveplug, {msg=msg,name=name})
