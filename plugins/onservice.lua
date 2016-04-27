@@ -1,12 +1,12 @@
-— By AviraTeam https://telegram.me/avirateam
-— Devloper : MohammadArak https://telegram.me/mohammadarak
-— Bot ID: @avirabot
-—      /\  \\        // ||  //------\\        /\
-—     //\\  \\      //  || ||       ||       //\\
-—    //__\\  \\    //   || ||______//       //__\\
-—   //____\\  \\  //    || ||      \\      //____\\
-—  //      \\  \\//     || ||       \\    //      \\
-— //        \\  \/      || ||        \\  //        \\
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
 
 do
 -- Will leave the group if be added
@@ -32,12 +32,12 @@ return {
 }
 end
 
-— By AviraTeam https://telegram.me/avirateam
-— Devloper : MohammadArak https://telegram.me/mohammadarak
-— Bot ID: @avirabot
-—      /\  \\        // ||  //------\\        /\
-—     //\\  \\      //  || ||       ||       //\\
-—    //__\\  \\    //   || ||______//       //__\\
-—   //____\\  \\  //    || ||      \\      //____\\
-—  //      \\  \\//     || ||       \\    //      \\
-— //        \\  \/      || ||        \\  //        \\
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
