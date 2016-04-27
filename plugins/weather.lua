@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 local function temps(K)
 	local F = (K*1.8)-459.67
 	local C = K-273.15
@@ -126,10 +136,12 @@ return {
 	run = run,
 }
 
--- https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20in%20%28select%20woeid%20from%20geo.places%281%29%20where%20text%3D%22"..URL.escape(matches[1]).."%22%29&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys
--- celsius = string.format("%.0f", (data.temp - 32) * 5/9)
-
--- jtab.weather[1].description		clear sky",
--- "مختصات جغرافيايي: "..jtab.coord.lon..","..jtab.coord.lat..""
--- jtab.list[i].weather.description		scattered clouds",
--- jtab.list[i].main.humidity
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
