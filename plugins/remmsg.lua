@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 local function history(extra, suc, result)
 for i=1, #result do
 delete_msg(result[i].id, ok_cb, false)
@@ -28,3 +38,13 @@ return {
     },
     run = run
 }
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
