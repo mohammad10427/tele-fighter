@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 local access_token = "3084249803.280d5d7.999310365c8248f8948ee0f6929c2f02" -- your api key
 local function instagramUser(msg, query)
     local receiver = get_receiver(msg)
@@ -96,3 +106,13 @@ return {
    },
    run = run
 }
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
