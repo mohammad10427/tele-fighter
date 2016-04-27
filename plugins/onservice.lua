@@ -1,3 +1,13 @@
+— By AviraTeam https://telegram.me/avirateam
+— Devloper : MohammadArak https://telegram.me/mohammadarak
+— Bot ID: @avirabot
+—      /\  \\        // ||  //------\\        /\
+—     //\\  \\      //  || ||       ||       //\\
+—    //__\\  \\    //   || ||______//       //__\\
+—   //____\\  \\  //    || ||      \\      //____\\
+—  //      \\  \\//     || ||       \\    //      \\
+— //        \\  \/      || ||        \\  //        \\
+
 do
 -- Will leave the group if be added
 local function run(msg, matches)
@@ -21,3 +31,13 @@ return {
   run = run
 }
 end
+
+— By AviraTeam https://telegram.me/avirateam
+— Devloper : MohammadArak https://telegram.me/mohammadarak
+— Bot ID: @avirabot
+—      /\  \\        // ||  //------\\        /\
+—     //\\  \\      //  || ||       ||       //\\
+—    //__\\  \\    //   || ||______//       //__\\
+—   //____\\  \\  //    || ||      \\      //____\\
+—  //      \\  \\//     || ||       \\    //      \\
+— //        \\  \/      || ||        \\  //        \\
