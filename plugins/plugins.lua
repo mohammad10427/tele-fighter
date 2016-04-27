@@ -1,13 +1,3 @@
--- By AviraTeam https://telegram.me/avirateam
--- Devloper : MohammadArak https://telegram.me/mohammadarak
--- Bot ID: @avirabot
---      /\  \\        // ||  //------\\        /\
---     //\\  \\      //  || ||       ||       //\\
---    //__\\  \\    //   || ||______//       //__\\
---   //____\\  \\  //    || ||      \\      //____\\
---  //      \\  \\//     || ||       \\    //      \\
--- //        \\  \/      || ||        \\  //        \\
-
 do
 
 -- Returns the key (index) in the config.enabled_plugins table
@@ -92,7 +82,7 @@ local function enable_plugin( plugin_name )
   print('checking if '..plugin_name..' exists')
   -- Check if plugin is enabled
   if plugin_enabled(plugin_name) then
-    return 'پلایگن '..plugin_name..' فعال شد'
+    return 'پلایگن '..plugin_name..' در حال حاظر فعال می باشد'
   end
   -- Checks if plugin exists
   if plugin_exists(plugin_name) then
@@ -100,17 +90,6 @@ local function enable_plugin( plugin_name )
     table.insert(_config.enabled_plugins, plugin_name)
     print(plugin_name..' added to _config table')
     save_config()
-    
--- By AviraTeam https://telegram.me/avirateam
--- Devloper : MohammadArak https://telegram.me/mohammadarak
--- Bot ID: @avirabot
---      /\  \\        // ||  //------\\        /\
---     //\\  \\      //  || ||       ||       //\\
---    //__\\  \\    //   || ||______//       //__\\
---   //____\\  \\  //    || ||      \\      //____\\
---  //      \\  \\//     || ||       \\    //      \\
--- //        \\  \/      || ||        \\  //        \\
-
     -- Reload the plugins
     return reload_plugins( )
   else
@@ -126,7 +105,7 @@ local function disable_plugin( name, chat )
   local k = plugin_enabled(name)
   -- Check if plugin is enabled
   if not k then
-    return 'پلایگن '..name..' فعال نشده است'
+    return 'پلایگن '..name..' در حال حاظر غیر فعال است'
   end
   -- Disable and reload
   table.remove(_config.enabled_plugins, k)
@@ -173,7 +152,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins 
-  if matches[1] == 'plugins' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == '!plugins' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -241,13 +220,6 @@ return {
 }
 
 end
-
--- By AviraTeam https://telegram.me/avirateam
--- Devloper : MohammadArak https://telegram.me/mohammadarak
--- Bot ID: @avirabot
---      /\  \\        // ||  //------\\        /\
---     //\\  \\      //  || ||       ||       //\\
---    //__\\  \\    //   || ||______//       //__\\
---   //____\\  \\  //    || ||      \\      //____\\
---  //      \\  \\//     || ||       \\    //      \\
--- //        \\  \/      || ||        \\  //        \\
+-- مدیر : @mohammadarak
+-- ربات : @avirabot
+-- هر گونه کپی برداری بدون ذکر منبع حرام است 
