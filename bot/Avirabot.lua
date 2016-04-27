@@ -214,7 +214,6 @@ function create_config( )
    "anti_fwd",
    "anti_spam",
    "anti_reply",
-   "anti_porn",
    "aparat",
    "arabic_lock",
    "auto_leave",
