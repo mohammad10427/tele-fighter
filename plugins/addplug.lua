@@ -37,6 +37,7 @@ local function run(msg, matches)
   return "پلایگن '..text..' به لیست پلایگن ها اضافه شد"
  end
 end
+end
 return {
   patterns = {
  "^[!/#](addplug) (.*)$",
