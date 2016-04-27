@@ -17,12 +17,9 @@ local function run(msg,matches)
     local group = msg.to.id
     if msg.reply_id then
    local name = matches[2]
-   if not is_sudo(msg) then
-     return "فقط مخصوص سودو می باشد"
       if matches[1] == "addplug" and matches[2] and is_sudo(msg) then
 load_document(msg.reply_id, saveplug, {msg=msg,name=name})
         return 'پلایگن '..name..' ذخیره شد'
-        end
     end
 end
 end
@@ -32,3 +29,12 @@ return {
   },
   run = run,
 }
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
