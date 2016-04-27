@@ -1,4 +1,4 @@
-!addplug save.lua local function saveplug(extra, success, result)
+local function saveplug(extra, success, result)
   local msg = extra.msg
   local name = extra.name
   local receiver = get_receiver(msg)
