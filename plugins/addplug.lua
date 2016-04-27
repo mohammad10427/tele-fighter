@@ -27,7 +27,7 @@ local function run(msg, matches)
    if not is_sudo(msg) then
      return "فقط مخصوص سودو می باشد"
    end
- if matches[1] == "addplug" then
+ if matches[1] == "addplugin" then
   return text
  else
   local file = io.open("./plugins/"..matches[1], "w")
@@ -41,7 +41,7 @@ end
 return {
   patterns = {
  "^[!/#](addplug) (.*)$",
- "^[!/]addplug ([^%s]+) (.*)$",
+ "^[!/#](addplugin) ([^%s]+) (.*)$",
   },
   run = run,
 }
