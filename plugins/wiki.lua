@@ -1,4 +1,13 @@
--- http://git.io/vUA4M
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 local socket = require "socket"
 local JSON = require "cjson"
 
@@ -28,7 +37,7 @@ local Wikipedia = {
     srlimit = 20,
 	 format = "json",
   },
-  default_lang = "en",
+  default_lang = "fa",
 }
 
 function Wikipedia:getWikiServer(lang)
@@ -168,10 +177,20 @@ return {
   description = "Searches Wikipedia and send results",
   usage = wikiusage,
   patterns = {
-    "^![Ww]iki(%w+) (search) (.+)$",
-    "^![Ww]iki (search) ?(.*)$",
-    "^![Ww]iki(%w+) (.+)$",
-    "^![Ww]iki ?(.*)$"
+    "^[!/#][Ww]iki(%w+) (search) (.+)$",
+    "^[!/#][Ww]iki (search) ?(.*)$",
+    "^[!/#][Ww]iki(%w+) (.+)$",
+    "^[!/#][Ww]iki ?(.*)$"
   },
   run = run
 }
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
