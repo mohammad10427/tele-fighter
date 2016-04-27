@@ -53,8 +53,8 @@ function save_vote(chat, user, vote)
 end
 
 function run(msg, matches)
-  if (matches[1] == "ing") then
-    if (matches [2] == "reset") then
+  if (matches[1] == "voting") and is_sudo(msg) then
+    if (matches [2] == "reset") and is_sudo(msg) then
       clear_votes (tostring(msg.to.id))
       return "امتیاز ها پاک شدند"
     elseif (matches [2] == "stats") then
@@ -62,7 +62,7 @@ function run(msg, matches)
       if (votes_result == "") then
         votes_result = "[No votes registered]\n"
       end
-      return "آمار امتیاز ها :\n" .. votes_result
+      return "🌟🌟🌟🌟 آمار امتیاز ها :\n" .. votes_result
     end
   else
     save_vote(tostring(msg.to.id), msg.from.print_name, tostring(tonumber(matches[2])))
@@ -78,9 +78,9 @@ return {
     "!voting stats: Shows the statistics of voting."
   },
   patterns = {
-    "^!vot(ing) (reset)",
-    "^!vot(ing) (stats)",
-    "^!vot(e) ([0-9]+)$"
+    "^[!/#](voting) (reset)",
+    "^[!/#](voting) (stats)",
+    "^[!/#](vote) ([0-9]+)$"
   }, 
   run = run 
 }
