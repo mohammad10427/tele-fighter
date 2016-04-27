@@ -9,10 +9,9 @@
 -- //        \\  \/      || ||        \\  //        \\
 
 local function addword(msg, name)
-    local name = matches[1]
     local hash = 'chat:'..msg.to.id..':badword'
     redis:hset(hash, name, 'newword')
-    return "کلمه '..name..' درون فیلترینگ گروه ثبت شد"
+    return "کلمه درون فیلترینگ گروه ثبت شد"
 end
 
 local function get_variables_hash(msg)
