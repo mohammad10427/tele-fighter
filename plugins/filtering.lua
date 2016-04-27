@@ -11,7 +11,7 @@
 local function addword(msg, name)
     local hash = 'chat:'..msg.to.id..':badword'
     redis:hset(hash, name, 'newword')
-    return "کلمه '..name..' درون فیلترینگ گروه ثبت شد
+    return "کلمه '..name..' درون فیلترینگ گروه ثبت شد"
 end
 
 local function get_variables_hash(msg)
