@@ -81,7 +81,6 @@ function run(msg, matches)
 	if string.match(text, '7') then text = string.gsub(text, '7', '۷') end
 	if string.match(text, '8') then text = string.gsub(text, '8', '۸') end
 	if string.match(text, '9') then text = string.gsub(text, '9', '۹') end
-	send_document(get_receiver(msg), "/root/Avira/logo/islamic.webp", ok_cb, false)
 	return text
 end
 
