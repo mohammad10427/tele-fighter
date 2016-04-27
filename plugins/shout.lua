@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 ﻿local function run(msg, matches)
     matches[1] = matches[1]:trim()
 
@@ -26,11 +36,21 @@ end
 
 return {
     description = "SHOUT",
-    usage = "[#]shout|[sasha] grida|[sasha] urla <text>: Sasha \"urla\" <text>.",
+    usage = "!shout text",
     patterns =
     {
         "^[#!/]?[Ss][Hh][Oo][Uu][Tt] (.*)$",
     },
     run = run,
-    min_rank = 3
+    min_rank = 5
 }
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
