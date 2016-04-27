@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 do
 function run_bash(str)
     local cmd = io.popen(str)
@@ -41,6 +51,17 @@ function get_staticmap(area)
     "&zoom="  .. zoom ..
     "&center=" .. URL.escape(area) ..
     "&markers=color:red"..URL.escape("|"..area)
+    
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 
   if api_key ~=nil and api_key ~= "" then
     parameters = parameters .. "&key="..api_key
@@ -90,3 +111,13 @@ return {
 }
 
 end
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
