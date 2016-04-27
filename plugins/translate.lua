@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 do
 
 function translate(source_lang, target_lang, text)
@@ -58,11 +68,21 @@ return {
     "[/!]tr source.target text",
   },
   patterns = {
-    "^[/!]tr ([%w]+).([%a]+) (.+)",
-    "^[/!]tr ([%w]+) (.+)",
-    "^[/!]tr (.+)",
+    "^[/!#]tr ([%w]+).([%a]+) (.+)",
+    "^[/!#]tr ([%w]+) (.+)",
+    "^[/!#]tr (.+)",
   }, 
   run = run 
 }
 
 end
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
