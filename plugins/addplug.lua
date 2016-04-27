@@ -24,26 +24,10 @@ load_document(msg.reply_id, saveplug, {msg=msg,name=name})
         return 'پلایگن '..name..' ذخیره شد'
     end
 end
-local function run(msg, matches)
- local text = matches[2]
-   if not is_sudo(msg) then
-     return "فقط مخصوص سودو می باشد"
-   end
- if matches[1] == "addplugin" then
-  return text
- else
-  local file = io.open("./plugins/"..matches[1], "w")
-  file:write(text)
-  file:flush()
-  file:close()
-  return "پلایگن '..text..' به لیست پلایگن ها اضافه شد"
- end
-end
 end
 return {
   patterns = {
  "^[!/#](addplug) (.*)$",
- "^[!/#](addplugin) ([^%s]+) (.*)$",
   },
   run = run,
 }
