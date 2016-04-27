@@ -2,6 +2,8 @@ local function saveplug(extra, success, result)
   local msg = extra.msg
   local name = extra.name
   local receiver = get_receiver(msg)
+  if not is_sudo(msg) then
+    return "فقط مخصوص سودو می باشد"
   if success then
     local file = 'plugins/'..name..'.lua'
     print('File saving to:', result)
