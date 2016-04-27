@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 local function run(msg, matches)
   if matches[1] == "file" then
     local file = matches[2]
@@ -14,3 +24,13 @@ return {
   },
   run = run
 }
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
