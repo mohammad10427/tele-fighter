@@ -17,7 +17,7 @@ local function run(msg,matches)
     local group = msg.to.id
     if msg.reply_id then
    local name = matches[2]
-      if matches[1] == "save" and matches[2] then
+      if matches[1] == "addplug" and matches[2] and is_sudo(msg) then
 load_document(msg.reply_id, saveplug, {msg=msg,name=name})
         return 'پلایگن ذخیره شد'
     end
