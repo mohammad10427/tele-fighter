@@ -1,3 +1,13 @@
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
+
 local function googlethat(query)
   local api        = "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&"
   local parameters = "q=".. (URL.escape(query) or "")
@@ -34,8 +44,18 @@ return {
   description = "Searches Google and send results",
   usage = "!google [terms]: Searches Google and send results",
   patterns = {
-    "^!google (.*)$",
+    "^[!/#]google (.*)$",
     "^%.[g|G]oogle (.*)$"
   },
   run = run
 }
+
+-- By AviraTeam https://telegram.me/avirateam
+-- Devloper : MohammadArak https://telegram.me/mohammadarak
+-- Bot ID: @avirabot
+--      /\  \\        // ||  //------\\        /\
+--     //\\  \\      //  || ||       ||       //\\
+--    //__\\  \\    //   || ||______//       //__\\
+--   //____\\  \\  //    || ||      \\      //____\\
+--  //      \\  \\//     || ||       \\    //      \\
+-- //        \\  \/      || ||        \\  //        \\
