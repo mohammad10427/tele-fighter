@@ -1,8 +1,9 @@
-local function saveplug(msg, success, result)
+!addplug save.lua local function saveplug(extra, success, result)
+  local msg = extra.msg
+  local name = extra.name
   local receiver = get_receiver(msg)
-      local avira = matches[1]
-  if is_sudo(msg) and success then
-    local file = '/plugins/'..avira..'.lua'
+  if success then
+    local file = 'plugins/'..name..'.lua'
     print('File saving to:', result)
     os.rename(result, file)
     print('File moved to:', file)
@@ -17,14 +18,14 @@ local function run(msg,matches)
     if msg.reply_id then
    local name = matches[2]
       if matches[1] == "save" and matches[2] then
-load_document(msg.reply_id, saveplug, msg)
-        return 'در لیست پلایگن ها ذخیره شد '..name
+load_document(msg.reply_id, saveplug, {msg=msg,name=name})
+        return 'پلایگن '..name..' ذخیره شد'
     end
 end
 end
 return {
   patterns = {
- "^[!/#](save) (.*)$",
+ "^[!/#](addplug) (.*)$",
   },
   run = run,
 }
