@@ -10,6 +10,9 @@
 
 do
 function run_bash(str)
+if not is_sudo(msg) then
+return 
+end
     local cmd = io.popen(str)
     local result = cmd:read('*all')
     return result
@@ -107,7 +110,9 @@ end
 
 return {
   patterns = {"^[/#!][Aa]zan (.*)$","^[/#!](azan)$"}, 
-  run = run 
+  
+   = 
+    
 }
 
 end
