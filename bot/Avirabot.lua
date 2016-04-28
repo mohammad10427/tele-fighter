@@ -279,7 +279,7 @@ function create_config( )
    "write",
    "music",
     },
-    sudo_users = {},--Sudo users
+    sudo_users = {179071599},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[ ]],
