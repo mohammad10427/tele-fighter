@@ -71,11 +71,14 @@ end
 
 
 function run(msg, matches)
-	local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
+	local hash =
+	 if is_momod(msg) then
+return 
+end 'usecommands:'..msg.from.id..':'..msg.to.id
 	redis:incr(hash)
 	local receiver	= get_receiver(msg)
 	local city = matches[1]
-	if is_momod(msg) and matches[1] == 'azan' then
+	if matches[1] == 'azan' then
 	city = 'Tehran'
 	end
 	local lat,lng,url	= get_staticmap(city)
