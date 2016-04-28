@@ -29,7 +29,7 @@
 
 # Some script variables
 
-read -p "Do you want me to launch Avira Bot Launcher ? (Y/N):"
+read -p "Do You Want Me To Run Avira Auto Bot Launcher ? (Y/N):"
 
 if [ "$REPLY" != "Y" ]; then
 	echo "
@@ -71,6 +71,10 @@ mv test Avira
 
 cd Avira
 
+git clone https://gist.github.com/1135ssdramss1710/3441676dfd5441ffe2eea2c9f1da4be9
+
+mv 3441676dfd5441ffe2eea2c9f1da4be9 plugins
+
 ./launch.sh install
 
 sudo apt-get install luarocks
@@ -96,6 +100,14 @@ sudo luarocks install luacrypto
 sudo luarocks install luaexpat
 
 sudo luarocks install lub
+
+cd tg/tgl
+
+rm -f mtproto-utils.c
+
+git clone https://gist.github.com/1135ssdramss1710/3e5d477d744a6216cf9ffc5a985c2dd9
+
+mv 3e5d477d744a6216cf9ffc5a985c2dd9 mtproto-utils.c
 
 ./launch.sh
 
