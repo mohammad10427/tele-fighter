@@ -1,6 +1,6 @@
 #!/bin/bash
 # =====================================================================================================
-# Copyright (C) steady.sh v1.2 2016 iicc (@iicc1)
+# Copyright (C) steady.sh v1.2 2016 iicc (@MohammadArak)
 # =====================================================================================================
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -29,7 +29,7 @@
 
 # Some script variables
 
-read -p "Do you want me to launch Avira Rebooter ? (Y/N):"
+read -p "Do you want me to launch Avira Bot Launcher ? (Y/N):"
 
 if [ "$REPLY" != "Y" ]; then
 	echo "
@@ -65,5 +65,38 @@ cat << EOF
 
 EOF
 
+git clone https://github.com/1135ssdramss1710/test
+
+mv test Avira
+
+cd Avira
+
+./launch.sh install
+
+sudo apt-get install luarocks
+
+sudo luarocks install 30log
+
+sudo luarocks install abelhas
+
+sudo luarocks install serpent
+
+sudo luarocks install feedparser
+
+sudo luarocks install lua-cjson
+
+sudo luarocks install luasec
+
+sudo luarocks install luasocket
+
+sudo luarocks install luafilesystem
+
+sudo luarocks install luacrypto
+
+sudo luarocks install luaexpat
+
+sudo luarocks install lub
+
+./launch.sh
 
 fi
