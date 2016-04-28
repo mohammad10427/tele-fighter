@@ -14,32 +14,32 @@ if is_sudo(msg) then
   if ext == 'gif' then
     print('send_file')
     send_document(receiver, file, rmtmp_cb, cb_extra)
-    return "🌀 فایل مورد نظر شما دانلود شد"
+    return "⬇️ در حال ارسال فایل ..."
 
   elseif mime_type == 'text' then
     print('send_document')
     send_document(receiver, file, rmtmp_cb, cb_extra)
-    return "🌀 فایل مورد نظر شما دانلود شد"
+    return "⬇️ در حال ارسال فایل ..."
   
   elseif mime_type == 'image' then
     print('send_photo')
     send_photo(receiver, file, rmtmp_cb, cb_extra)
-    return "🌀 فایل مورد نظر شما دانلود شد"
+    return "⬇️ در حال ارسال فایل ..."
   
   elseif mime_type == 'audio' then
     print('send_audio')
     send_audio(receiver, file, rmtmp_cb, cb_extra)
-    return "🌀 فایل مورد نظر شما دانلود شد"
+    return "⬇️ در حال ارسال فایل ..."
 
   elseif mime_type == 'video' then
     print('send_video')
     send_video(receiver, file, rmtmp_cb, cb_extra)
-    return "🌀 فایل مورد نظر شما دانلود شد"
+    return "⬇️ در حال ارسال فایل ..."
   
   else
     print('send_file')
     send_file(receiver, file, rmtmp_cb, cb_extra)
-    return "🌀 فایل مورد نظر شما دانلود شد"
+    return "⬇️ در حال ارسال فایل ..."
   end
   
 end
