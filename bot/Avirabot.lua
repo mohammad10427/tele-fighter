@@ -220,6 +220,7 @@ function create_config( )
    "azan",
    "banhammer",
    "broadcast",
+   "boobs",
    "calc",
    "cpu",
    "echo+",
