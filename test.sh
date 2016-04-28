@@ -6,16 +6,7 @@ if [ "$REPLY" != "yes" ]; then
 	echo "
 "
 else 
-        echo {
-        	
-     /\  \\        // ||  //------\\        /\
-    //\\  \\      //  || ||       ||       //\\
-   //__\\  \\    //   || ||______//       //__\\
-  //____\\  \\  //    || ||      \\      //____\\
- //      \\  \\//     || ||       \\    //      \\
-//        \\  \/      || ||        \\  //        \\
-
-        }
+        echo {Rebooter}
         
 
         
@@ -30,8 +21,8 @@ cat << EOF
  $f1▀ ▀▄▄ ▄▄▀ ▀   $f2 ▀█▄ ▀▀ ▄█▀    $f3▀▄    ▄▀   $f4▀ ▀▄▄ ▄▄▀ ▀   $f5 ▀█▄ ▀▀ ▄█▀    $f6▀▄    ▄▀$rst
  
 EOF
-echo -e "                \e[100m                Steady script           \e[00;37;40m"
-echo -e "               \e[01;34m                    by AviraTeam                \e[00;37;40m"
+echo -e "                \e[100m                Rebooter Script           \e[00;37;40m"
+echo -e "               \e[01;34m                 by AviraTeam                \e[00;37;40m"
 echo ""
 cat << EOF
  $bld$f1▄ ▀▄   ▄▀ ▄   $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4▄ ▀▄   ▄▀ ▄   $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst
