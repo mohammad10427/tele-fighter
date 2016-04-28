@@ -71,10 +71,7 @@ end
 
 
 function run(msg, matches)
-	local hash =
-	 if is_momod(msg) then
-return 
-end 'usecommands:'..msg.from.id..':'..msg.to.id
+	local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
 	redis:incr(hash)
 	local receiver	= get_receiver(msg)
 	local city = matches[1]
