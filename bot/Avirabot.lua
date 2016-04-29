@@ -218,6 +218,7 @@ function create_config( )
    "arabic_lock",
    "auto_leave",
    "azan",
+   "age",
    "banhammer",
    "broadcast",
    "boobs",
