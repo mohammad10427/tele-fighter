@@ -277,7 +277,12 @@ function create_config( )
    "wiki",
    "webshot",
    "write",
+   "warn",
    "music",
+   "quran",
+   "abjad",
+   "remind",
+   "txt2image",
     },
     sudo_users = {179071599},--Sudo users
     moderation = {data = 'data/moderation.json'},
