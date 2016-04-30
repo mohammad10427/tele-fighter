@@ -240,7 +240,6 @@ function create_config( )
    "google",
    "gps",
    "joke",
-   "info",
    "ip",
    "inpm",
    "inrealm",
@@ -266,6 +265,7 @@ function create_config( )
    "supergroup",
    "support",
    "shout",
+   "setcommand",
    "time",
    "tophoto",
    "tosticker",
@@ -281,7 +281,6 @@ function create_config( )
    "music",
    "abjad",
    "remind",
-   "txt2image",
     },
     sudo_users = {179071599},--Sudo users
     moderation = {data = 'data/moderation.json'},
