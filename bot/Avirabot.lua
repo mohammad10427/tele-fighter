@@ -216,7 +216,6 @@ function create_config( )
    "anti_reply",
    "aparat",
    "arabic_lock",
-   "auto_leave",
    "azan",
    "age",
    "banhammer",
