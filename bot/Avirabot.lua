@@ -240,6 +240,7 @@ function create_config( )
    "google",
    "gps",
    "joke",
+   "info",
    "ip",
    "inpm",
    "inrealm",
