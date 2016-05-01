@@ -215,6 +215,7 @@ function create_config( )
    "anti_spam",
    "anti_reply",
    "aparat",
+   "apk",
    "arabic_lock",
    "azan",
    "age",
