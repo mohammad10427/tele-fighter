@@ -273,6 +273,7 @@ function create_config( )
    "topng",
    "translate",
    "txt2sticker",
+   "txt2image",
    "voice",
    "vote",
    "weather",
