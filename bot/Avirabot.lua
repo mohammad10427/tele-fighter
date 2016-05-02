@@ -266,7 +266,6 @@ function create_config( )
    "supergroup",
    "support",
    "shout",
-   "setcommand",
    "time",
    "tophoto",
    "tosticker",
