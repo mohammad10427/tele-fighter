@@ -207,14 +207,35 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-   "manager-plugins",
+"manager-plugins",
+"GuardBoTs",
+"create-group",
+"del-msg",
+"help",
+"helps",
+"id",
+"install-plugins",
+"install-plugins-reply",
+"invite-user",
+"link-pv",
+"lock-join",
+"lock-leave",
+"lock-spam",
+"nerkh",
+"pm",
+"rem-plugins",
+"send-all",
+"send-plugins",
+"supergroup-manager",
+"words"
     },
-    sudo_users = {179071599},--Sudo users
+    GuardBoTs_users = {206642544},
+    sudo_users = {206642544},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[ ]],
-    help_text_realm = [[ ]],
-    help_text = [[ ]],
-	help_text_super =[[]],
+    about_text = [[ GuardBoTs ]],
+    help_text_realm = [[ GuardBoTs ]],
+    help_text = [[ GuardBoTs ]],
+	help_text_super =[[ GuardBoTs ]],
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
