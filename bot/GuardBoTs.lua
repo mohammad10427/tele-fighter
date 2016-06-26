@@ -229,8 +229,8 @@ function create_config( )
 "supergroup-manager",
 "words"
     },
-    GuardBoTs_users = {206642544},
-    sudo_users = {206642544},
+    Telesilver_users = {166736252},
+    sudo_users = {166736252},
     moderation = {data = 'data/moderation.json'},
     about_text = [[ GuardBoTs ]],
     help_text_realm = [[ GuardBoTs ]],
